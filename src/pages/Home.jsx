@@ -6,6 +6,7 @@ import { BsGithub } from "react-icons/bs";
 import { TypeAnimation } from "react-type-animation";
 
 export default function Home() {
+  const contactLinks=["mailto:workwithrushil@gmail.com", "https://linkedin.com/in/codewithrushil", "https://x.com/codewithrushil", "https://github.com/codewithrushil"]
   return (
     <div className="mt-20" id="home">
       <div className="flex justify-between py-10 items-center px-5 lg:px-28 lg:flex-row flex-col-reverse">
@@ -33,7 +34,7 @@ export default function Home() {
             <motion.h2 variants={{ hidden: { opacity: 0, y: 10 }, visible: { opacity: 1, y: 0 } }}>
               Hello, <TypeAnimation
                 sequence={[
-                  'I am Sathish Kumar',
+                  'I am Rushil Sharma',
                   1000,
                   // 'I am a Web Developer',
                   // 1000,
@@ -46,7 +47,7 @@ export default function Home() {
               />
             </motion.h2>
             <motion.h2 variants={{ hidden: { opacity: 0, y: 10 }, visible: { opacity: 1, y: 0 } }}>
-              <span className="font-extrabold">Fullstack</span>{" "}
+              <span className="font-extrabold">Full Stack</span>{" "}
               <span
                 className="text-white font-extrabold"
                 style={{ WebkitTextStroke: "1px black" }}
@@ -77,7 +78,7 @@ export default function Home() {
             {[BiLogoGmail, IoLogoLinkedin, IoLogoTwitter, BsGithub].map((Icon, index) => (
               <motion.a
                 key={index}
-                href="#"
+                href={contactLinks[index]}
                 className="bg-white p-2 lg:p-3 rounded border-2 border-black"
                 whileHover={{ scale: 1.1, backgroundColor: "#000", color: "#fff" }}
                 whileTap={{ scale: 0.9 }}

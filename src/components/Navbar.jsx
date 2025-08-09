@@ -40,8 +40,8 @@ export default function Navbar() {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           onClick={() => scrollToSection("home")}
-          className="h-9 cursor-pointer"
-          src="/assets/logo.svg"
+          className="h-9 cursor-pointer invert"
+          src="/assets/signature.png"
           alt="Logo"
         />
 
@@ -70,7 +70,7 @@ export default function Navbar() {
           <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
           <span className="absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-black"></span>
           <span className="relative text-black group-hover:text-white flex items-center gap-x-3">
-            Resume <TbDownload size={16} />
+            <a href="https://rushil-sharma-resume.tiiny.site/" target="_blank" className="relative text-black group-hover:text-white flex items-center gap-x-3">Resume</a> <TbDownload size={16} />
           </span>
         </motion.a>
 

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { FaJs, FaReact, FaNodeJs, FaPython, FaDatabase,FaJava } from "react-icons/fa";
-import { BiLogoPostgresql } from "react-icons/bi";
+import { FaJs, FaReact, FaNodeJs, FaHtml5, FaGitAlt, FaCss3Alt } from "react-icons/fa";
+import { SiMongodb, SiExpress } from "react-icons/si";
 import { RiNextjsFill,RiTailwindCssFill } from "react-icons/ri";
 import { CgFigma } from "react-icons/cg";
 
@@ -10,11 +10,11 @@ export default function Skills() {
     { id: 1, name: "JavaScript", icon: <FaJs size={50} /> },
     { id: 2, name: "React", icon: <FaReact size={50} /> },
     { id: 3, name: "Node.js", icon: <FaNodeJs size={50} /> },
-    { id: 4, name: "Python", icon: <FaPython size={50} /> },
-    { id: 5, name: "MongoDB", icon: <FaDatabase size={50} /> },
-    { id: 6, name: "Java", icon: <FaJava size={50} /> },
-    { id: 7, name: "Postgresql", icon: <BiLogoPostgresql size={50} /> },
-    { id: 8, name: "Next.js", icon: <RiNextjsFill size={50} /> },
+    { id: 4, name: "Git", icon: <FaGitAlt size={50} /> },
+    { id: 5, name: "MongoDB", icon: <SiMongodb size={50} /> },
+    { id: 6, name: "Express.js", icon: <SiExpress size={50} /> },
+    { id: 7, name: "HTML5", icon: <FaHtml5 size={50} /> },
+    { id: 8, name: "CSS3", icon: <FaCss3Alt size={50} /> },
     { id: 9, name: "Tailwind", icon: <RiTailwindCssFill size={50} /> },
     { id: 10, name: "Figma", icon: <CgFigma size={50} /> },
   ]);
@@ -22,21 +22,21 @@ export default function Skills() {
   const [experiences] = useState([
     {
       id: 1,
-      company: "Google",
-      role: "Lead Software Engineer",
-      period: "Nov 2019 - Present",
+      company: "Upwork",
+      role: "Freelancer ",
+      period: "January 2024 – Present",
       description:
-        "Developed innovative solutions for Google's core search algorithms, optimizing search accuracy and user experience. Developed innovative solutions for Google's core search algorithms, optimizing search accuracy and user experience. Developed innovative solutions for Google's core search algorithms, optimizing search accuracy and user experience. Developed innovative solutions for Google's core search algorithms, optimizing search accuracy and user experience.",
-      logo: "/assets/google.svg",
+        "Managed multiple projects simultaneously, adhering to deadlines and ensuring high-quality deliverables within agreed-upon timelines. Optimized websites for performance and SEO, improving page load times and search engine rankings to enhance online visibility. Emphasized strong communication and collaboration skills to ensure client satisfaction.",
+      logo: "/assets/about-me.svg",
     },
     {
       id: 2,
-      company: "Youtube",
-      role: "Software Engineer",
-      period: "Jan 2017 - Oct 2019",
+      company: "Web Dev Masters",
+      role: "Club Leader",
+      period: "June 2023 – Dec. 2023",
       description:
-        "At Youtube, I served as a  Software Engineer, focusing on the design and implementation of backend systems for the social media giant's dynamic platform. Working on projects that involved large-scale data processing and user engagement features, I leveraged my expertise to ensure seamless functionality and scalability.",
-      logo: "/assets/youtube.svg",
+        "Planned and conducted regular coding sessions, focusing on web development topics, including HTML, CSS and JavaScript. Mentored 50+ club members by providing guidance on personal and group projects, helping them troubleshoot issues, and fostering a collaborative learning environment. Organized coding challenges and competitions, encouraging participation and improving members’ problem-solvingand coding skills",
+      logo: "/assets/about-me.svg",
     },
   ]);
 

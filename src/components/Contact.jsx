@@ -9,6 +9,7 @@ import { FaPhone } from "react-icons/fa6";
 export default function Contact() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.2 });
+  const contactLinks=["mailto:workwithrushil@gmail.com", "https://linkedin.com/in/codewithrushil", "https://x.com/codewithrushil", "https://github.com/codewithrushil"]
 
   return (
     <motion.div
@@ -59,10 +60,11 @@ export default function Contact() {
                 {[BiLogoGmail, IoLogoLinkedin, IoLogoTwitter, BsGithub].map((Icon, index) => (
                   <motion.a
                     key={index}
-                    href="#"
+                    href={contactLinks[index]}
                     className="bg-white p-2 lg:p-3 rounded border-2 border-black"
                     whileHover={{ scale: 1.1, backgroundColor: "#000", color: "#fff" }}
                     whileTap={{ scale: 0.9 }}
+                    target="_blank"
                   >
                     <Icon className="w-4 h-4 lg:w-5 lg:h-5" />
                   </motion.a>
@@ -89,23 +91,23 @@ export default function Contact() {
             <motion.a
               whileHover={{ x: 5 }}
               className='flex items-center gap-2 group'
-              href="mailto:Youremail@gmail.com"
+              href="mailto:workwithrushil@gmail.com"
             >
               <span className='border-2 transition-all border-transparent group-hover:border-black rounded-full p-1'>
                 <IoMdMail className="w-4 h-4 lg:w-5 lg:h-5" />
               </span>
-              Youremail@gmail.com
+              workwithrushil@gmail.com
             </motion.a>
 
             <motion.a
               whileHover={{ x: 5 }}
               className='flex items-center gap-2 group'
-              href="tele:1234567890"
+              href="tele:9086126676"
             >
               <span className='border-2 transition-all border-transparent group-hover:border-black rounded-full p-[5px]'>
                 <FaPhone className="w-3 h-3 lg:w-4 lg:h-4" />
               </span>
-              1234567890
+              9086126676
             </motion.a>
           </div>
         </motion.div>

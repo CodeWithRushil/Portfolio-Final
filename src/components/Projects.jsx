@@ -5,17 +5,17 @@ import { motion } from 'framer-motion';
 const projects = [
   {
     id: 1,
-    title: "Crypto Screener Application",
+    title: "LinkedInk",
     description: "A powerful tool for tracking and analyzing cryptocurrency trends in real-time.",
     image: "/assets/project1.png",
-    link: "#"
+    link: "https://linkedink.vercel.app"
   },
   {
     id: 2,
-    title: "Stock Market Dashboard",
-    description: "An interactive dashboard to monitor stock prices and market trends efficiently.",
+    title: "Vertex",
+    description: "A full-stack web application that enables users to list, browse, and purchase used tech products",
     image: "/assets/project1.png",
-    link: "#"
+    link: "https://vertex.vercel.app"
   }
 ];
 
