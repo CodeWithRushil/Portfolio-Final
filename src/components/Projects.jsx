@@ -14,8 +14,8 @@ const projects = [
     id: 2,
     title: "Vertex",
     description: "A full-stack web application that enables users to list, browse, and purchase used tech products",
-    image: "/assets/project1.png",
-    link: "https://vertex.vercel.app"
+    image: "/assets/project2.png",
+    link: "#"
   }
 ];
 
