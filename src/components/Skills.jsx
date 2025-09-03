@@ -106,7 +106,7 @@ export default function Skills() {
                     {exp.role} at {exp.company}
                   </h2>
                 </div>
-                <span className="text-[#D4D4D8] font-semibold text-sm mt-4 lg:mt-0 lg:text-base">
+                <span className="dark:text-sm text-[#D4D4D8] font-semibold text-sm mt-4 lg:mt-0 lg:text-base">
                   {exp.period}
                 </span>
               </div>
