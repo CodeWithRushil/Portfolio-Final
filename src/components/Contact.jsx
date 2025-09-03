@@ -7,9 +7,9 @@ import { IoMdMail } from "react-icons/io";
 import { FaPhone } from "react-icons/fa6";
 
 export default function Contact() {
-  const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.2 });
   const contactLinks=["mailto:workwithrushil@gmail.com", "https://linkedin.com/in/codewithrushil", "https://x.com/codewithrushil", "https://github.com/codewithrushil"]
+  const ref = useRef(null);
 
   return (
     <motion.div
@@ -29,7 +29,7 @@ export default function Contact() {
         Contact <span className='font-extrabold'>Me</span>
       </motion.h2>
 
-      <div className='flex justify-between items-center mt-8 lg:mt-16 flex-col lg:flex-row'>
+      <div className='dark:flex flex justify-between items-center mt-8 lg:mt-16 flex-col lg:flex-row'>
         <motion.div
           initial={{ x: -50, opacity: 0 }}
           animate={isInView ? { x: 0, opacity: 1 } : { opacity: 0 }}
