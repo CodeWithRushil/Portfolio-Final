@@ -2,23 +2,10 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { FaJs, FaReact, FaNodeJs, FaHtml5, FaGitAlt, FaCss3Alt } from "react-icons/fa";
 import { SiMongodb, SiExpress } from "react-icons/si";
-import { RiNextjsFill,RiTailwindCssFill } from "react-icons/ri";
+import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 import { CgFigma } from "react-icons/cg";
 
 export default function Skills() {
-  const [skills] = useState([
-    { id: 1, name: "JavaScript", icon: <FaJs size={50} /> },
-    { id: 2, name: "React", icon: <FaReact size={50} /> },
-    { id: 3, name: "Node.js", icon: <FaNodeJs size={50} /> },
-    { id: 4, name: "Git", icon: <FaGitAlt size={50} /> },
-    { id: 5, name: "MongoDB", icon: <SiMongodb size={50} /> },
-    { id: 6, name: "Express.js", icon: <SiExpress size={50} /> },
-    { id: 7, name: "HTML5", icon: <FaHtml5 size={50} /> },
-    { id: 8, name: "CSS3", icon: <FaCss3Alt size={50} /> },
-    { id: 9, name: "Tailwind", icon: <RiTailwindCssFill size={50} /> },
-    { id: 10, name: "Figma", icon: <CgFigma size={50} /> },
-  ]);
-
   const [experiences] = useState([
     {
       id: 1,
@@ -39,7 +26,18 @@ export default function Skills() {
       logo: "/assets/about-me.svg",
     },
   ]);
-
+  const [skills] = useState([
+    { id: 1, name: "JavaScript", icon: <FaJs size={50} /> },
+    { id: 2, name: "React", icon: <FaReact size={50} /> },
+    { id: 3, name: "Node.js", icon: <FaNodeJs size={50} /> },
+    { id: 4, name: "Git", icon: <FaGitAlt size={50} /> },
+    { id: 5, name: "MongoDB", icon: <SiMongodb size={50} /> },
+    { id: 6, name: "Express.js", icon: <SiExpress size={50} /> },
+    { id: 7, name: "HTML5", icon: <FaHtml5 size={50} /> },
+    { id: 8, name: "CSS3", icon: <FaCss3Alt size={50} /> },
+    { id: 9, name: "Tailwind", icon: <RiTailwindCssFill size={50} /> },
+    { id: 10, name: "Figma", icon: <CgFigma size={50} /> },
+  ]);
   return (
     <div className="mt-3 lg:mt-16" id="skills">
       <div className="px-5 lg:px-28">
