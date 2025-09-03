@@ -7,6 +7,7 @@ export default function Footer() {
 
       <div className='text-white lg:font-semibold lg:text-sm font-normal text-[10px] text-right lg:space-y-3'>
         <p>&copy; 2025. All rights reserved.</p>
+        {/* Add the current year instead of manually typing the year! */}
         <p>Made by: Rushil Sharma</p>
       </div>
     </div>
