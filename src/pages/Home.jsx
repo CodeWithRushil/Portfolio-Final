@@ -19,7 +19,7 @@ export default function Home() {
         >
 
           <motion.div
-            className="text-2xl lg:text-5xl flex flex-col mt-8 lg:mt-0 gap-2 lg:gap-5 text-nowrap"
+            className="dark:text-2xl text-2xl lg:text-5xl flex flex-col mt-8 lg:mt-0 gap-2 lg:gap-5 text-nowrap"
             initial="hidden"
             animate="visible"
             variants={{
@@ -36,10 +36,6 @@ export default function Home() {
                 sequence={[
                   'I am Rushil Sharma',
                   1000,
-                  // 'I am a Web Developer',
-                  // 1000,
-                  // 'I am a UI/UX Designer',
-                  // 1000,
                 ]}
                 speed={10}
                 style={{ fontWeight:600 }}
