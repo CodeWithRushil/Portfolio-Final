@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 export default function About() {
   return (
-    <div className="px-5 lg:px-28 flex justify-between flex-col lg:flex-row" id="about">
+    <div className="dark:px-5 px-5 lg:px-28 flex justify-between flex-col lg:flex-row" id="about">
       <motion.div
         className="lg:w-1/2"
         initial={{ opacity: 0, x: -50 }}
@@ -26,7 +26,7 @@ export default function About() {
         </h2>
 
         <p className="text-[#71717A] text-sm/6 lg:text-base mt-5 lg:mt-10">
-          I'm a passionate full-stack developer specializing in React.js & Node.js. I thrive on blending technical expertise with sleek UI/UX design to build high-performing, user-friendly applications.
+          I am a passionate full-stack developer specializing in React.js & Node.js. I thrive on blending technical expertise with sleek UI/UX design to build high-performing, user-friendly applications.
         </p>
 
         <p className="text-[#71717A] text-sm/6 lg:text-base mt-3 lg:mt-5">
