@@ -21,7 +21,7 @@ const projects = [
 
 export default function Projects() {
   return (
-    <div className="bg-black px-5 lg:px-28 py-8 my-8 lg:py-16 lg:my-16" id="projects">
+    <div className="dark:bg-black bg-black px-5 lg:px-28 py-8 my-8 lg:py-16 lg:my-16" id="projects">
       <h2 className="text-2xl lg:text-4xl text-center text-white">
         My <span className="font-extrabold">Projects</span>
       </h2>
@@ -39,8 +39,8 @@ export default function Projects() {
             <div className="lg:w-[500px] w-full rounded-2xl overflow-hidden">
               <img
                 className="w-full h-full hover:scale-105 transition-all duration-500 cursor-pointer object-cover"
-                src={project.image}
                 alt={project.title}
+                src={project.image}
               />
             </div>
 
