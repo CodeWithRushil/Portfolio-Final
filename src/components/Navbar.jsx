@@ -4,8 +4,8 @@ import { TbDownload } from "react-icons/tb";
 import { HiOutlineMenu, HiX } from "react-icons/hi";
 
 export default function Navbar() {
-  const [hasShadow, setHasShadow] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const [hasShadow, setHasShadow] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -41,8 +41,8 @@ export default function Navbar() {
           whileTap={{ scale: 0.9 }}
           onClick={() => scrollToSection("home")}
           className="h-9 cursor-pointer invert"
-          src="/assets/signature.png"
           alt="Logo"
+          src="/assets/signature.png"
         />
 
         <ul className="hidden lg:flex items-center gap-x-7 font-semibold">
