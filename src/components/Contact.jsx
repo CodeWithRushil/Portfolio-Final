@@ -28,7 +28,6 @@ export default function Contact() {
       >
         Contact <span className='font-extrabold'>Me</span>
       </motion.h2>
-
       <div className='dark:flex flex justify-between items-center mt-8 lg:mt-16 flex-col lg:flex-row'>
         <motion.div
           initial={{ x: -50, opacity: 0 }}
