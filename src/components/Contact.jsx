@@ -50,7 +50,7 @@ export default function Contact() {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 type='submit'
-                className='bg-black justify-center w-fit lg:w-auto lg:flex-1 hover:shadow-lg text-white px-3 py-2 rounded flex items-center gap-x-3 font-medium'
+                className='dark:bg-black bg-black justify-center w-fit lg:w-auto lg:flex-1 hover:shadow-lg text-white px-3 py-2 rounded flex items-center gap-x-3 font-medium'
               >
                 Get In Touch
               </motion.button>
